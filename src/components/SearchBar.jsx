@@ -14,9 +14,9 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <div class = "search-bar">
+    <div className = "search-bar">
       <input
-        class = "search-bar-input"
+        className = "search-bar-input"
         type="text"
         value={query}
         onChange={handleInputChange}

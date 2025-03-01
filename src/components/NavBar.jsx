@@ -1,20 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Categories from '../assets/Categories.json';
 import './NavBar.css';
 
 const NavBar = () => {
+    const [activeCategory, setActiveCategory] = useState(null);
+
+    const mouseOver = (e) => {
+        console.log(e.target.dataset.index);
+        
+        const index = parseInt(e.target.dataset.index);
+        setActiveCategory(index);
+        console.log(activeCategory);
+        
+    }
+
+    const mouseOut = () => {
+        setActiveCategory(null);
+    }
+
     return (
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="navbar-item">Smartphones</li>
-                <li class="navbar-item">Informatique</li>
-                <li class="navbar-item">Électroménager</li>
-                <li class="navbar-item">Image - son</li>
-                <li class="navbar-item">Beauté</li>
-                <li class="navbar-item">Enfants</li>
-                <li class="navbar-item">Bricolage</li>
-                <li class="navbar-item">Jardinage</li>
+        <nav className="navbar">
+            <ul className="navbar-categories-list">
+                {Categories.Categories.map((category, index) => (
+                    <li
+                        className="navbar-item" 
+                        key={index}
+                        data-index={index}
+                        onMouseOver={mouseOver}
+                        onMouseOut={mouseOut}
+                    >
+                        {category.name}
+                    </li>
+                ))}
             </ul>
-            {/*<div class="categories"></div>*/}
+            <div className={`sub-categories-container ${activeCategory !== null ? 'visible' : ''}`}>
+                {activeCategory !== null && Categories.Categories[activeCategory].columns.map((column, rowIndex) => (
+                    <div key={rowIndex} className="column">
+                        {column[rowIndex].map((subCategory, subIndex) => (
+                            <div key={subIndex} className="sub-category-container">
+                                <p className='subCategoryName'>{subCategory.name}</p>
+                                {subCategory.subCategories.map((subSubCategory, subSubIndex) => (
+                                    <p key={subSubIndex} className='subSubCategoryName'>{subSubCategory}</p>
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                ))}
+            </div>
         </nav>
     );
 };

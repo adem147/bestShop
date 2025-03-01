@@ -1,4 +1,6 @@
 .Home{
+    position: absolute;
+    top: 105px;
     width: 100%;
     padding-top: 00px;
     display: flex;
@@ -7,9 +9,70 @@
     height: 100vh;
     color: white;
 }
-.Banner {
+.promo-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    align-self: flex-start;
+    margin: 0;
+    color: #FF2828;
     
-    width: 80%;
-    padding-top: 20px;
-
+}
+.promo-cards-container{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    user-select: none;
+}
+.promo-cards-container *{
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+.promo-cards-container::-webkit-scrollbar {
+    display: none;
+}
+.cards-container-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-container-arrow .arrow-icon{
+    width: 22px;
+    height: 22px;
+    fill: #000;
+}
+.cards-container-left-arrow{
+    left: 20px;
+}
+.cards-container-left-arrow .arrow-icon{
+    transform: scaleX(-1);
+    margin-right: 3px;
+}
+.cards-container-right-arrow{
+    right: 20px;
+}
+.cards-container-right-arrow .arrow-icon{
+    margin-right: -3px;
 }

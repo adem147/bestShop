@@ -1,0 +1,34 @@
+.topBar {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.logoPlaceholder {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.rightSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.welcomeUser {
+    font-size: 16px;
+    color: black;
+}
