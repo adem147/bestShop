@@ -9,7 +9,7 @@ const Item = () => {
       <div className="SellerInfo">
         <img src={SellerLogo} alt="Seller Logo" class="SellerLogo" />
         <hr className="Divider" />
-        <h4 className="Price">140 DT</h4>
+        <h4 className="Price">150 DT</h4>
       </div>
     
       <div class="Button">
