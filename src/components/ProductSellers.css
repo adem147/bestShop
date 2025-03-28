@@ -1,0 +1,98 @@
+.SellersFrame{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #d1d1d1;
+}
+
+
+.SellersContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+    margin: 10px;
+
+
+
+    gap: 10px;
+    width: 75%;
+    height: 100%;
+      
+}
+.Sellers{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    width: 150px;
+    height: 125px;
+
+
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1)
+}
+
+h1{
+    color: rgb(255, 0, 0);
+}
+
+
+
+.Sellers .SellerInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.SellerInfo .SellerLogo{
+    margin-top: 2px;
+    width: 50%;   
+}
+
+
+.Sellers .Divider{
+    height: 5px;
+    width: 99%;
+    background-color: #999999;
+   
+}
+
+.SellerInfo .Price{
+    color: black;
+    font-size: 50%;
+}
+
+.Sellers .Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 20%;
+    background-color: rgb(0, 197, 0);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.Sellers .Button h4{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 50%;
+
+    
+}
+
+
+
+
+
+
