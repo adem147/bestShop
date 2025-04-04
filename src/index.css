@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Karantina";
+  src: local("Karantina"),
+   url("./assets/fonts/Karantina-Regular.ttf") format("truetype");
+  font-weight:normal;
+ }
+
+@font-face {
+  font-family: "PublicSans";
+  src: local("PublicSans"),
+   url("./assets/fonts/PublicSans.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+.karantina {
+  font-family: "Karantina";
+}
+
+.PublicSans {
+  font-family: "PublicSans";
+}

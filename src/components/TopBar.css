@@ -1,0 +1,49 @@
+.topBar {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.logoPlaceholder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+}
+
+.vl-logo{
+    width: 1px;
+    height: 24px;
+    background-color: #949494;
+}
+
+.rightSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    height: 26px;
+    width: 26px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.userIcon {
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}

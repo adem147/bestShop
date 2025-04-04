@@ -1,50 +1,27 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import SearchBar from './SearchBar';
+import './TopBar.css';
+import { ReactComponent as NotifIcon } from '../assets/svg/notif-icon.svg';
+import { ReactComponent as WishIcon } from '../assets/svg/heart1.svg';
+import { ReactComponent as CartIcon } from '../assets/svg/cart.svg';
+import { ReactComponent as UserIcon } from '../assets/svg/user.svg';
 
 const TopBar = () => {
+    const navigate = useNavigate();
     return (
-        <div style={styles.topBar}>
-            <div style={styles.logoPlaceholder}>Logo</div>
+        <div className="topBar karantina">
+            <div className="logoPlaceholder" onClick={() => navigate("/")}>BESTSHOP<div className='vl-logo'/></div>
             <SearchBar />
-            <div style={styles.rightSection}>
-                <div style={styles.icon}>🔔</div>
-                <div style={styles.icon}>🛒</div>
-                <div style={styles.welcomeUser}>Welcome, User</div>
+            <div className="rightSection">
+            <div className="icon"><NotifIcon/></div>
+                <div className="icon"><WishIcon/></div>
+                <div className="icon"><CartIcon/></div>
+                <div className="userIcon" onClick={() => navigate("/login")}><UserIcon/></div>
             </div>
         </div>
     );
 };
 
-const styles = {
-    topBar: {
-        width: '100vw',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '10px 20px',
-        backgroundColor: '#f8f8f8',
-        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-        boxSizing: "border-box",
-    },
-    logoPlaceholder: {
-        /*flex: 1,*/
-        fontSize: "20px",
-        color: "black",
-        textAlign: "center",
-    },
-    rightSection: {
-        display: 'flex',
-        alignItems: 'center',
-        gap: '20px',
-    },
-    icon: {
-        fontSize: '20px',
-        cursor: 'pointer',
-    },
-    welcomeUser: {
-        fontSize: '16px',
-        color: "black",
-    },
-};
 
 export default TopBar;

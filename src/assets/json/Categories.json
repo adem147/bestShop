@@ -1,0 +1,125 @@
+{
+    "Categories": [
+        {
+            "name": "Informatique",
+            "columns": [
+                [
+                    {
+                        "name": "Ordinateurs Portables",
+                        "subCategories": [
+                            "laptops",
+                            "Laptop Gaming",
+                            "Lightweight",
+                            "Macbook"
+                        ]
+                    },
+                    {
+                        "name": "Stockage",
+                        "subCategories": [
+                            "Disque HDD",
+                            "Disque SSD",
+                            "Carte Memoire",
+                            "Clé USB",
+                            "CD & DVD",
+                            "Accessoires Stockage"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Ordinateurs Bureau",
+                        "subCategories": [
+                            "Desktop",
+                            "Desktop Gaming",
+                            "Station de Travail",
+                            "All In One",
+                            "IMac"
+                        ]
+                    },
+                    {
+                        "name": "Serveur",
+                        "subCategories": [
+                            "Serveur Tour",
+                            "Serveur Rack"
+                        ]
+                    },
+                    {
+                        "name": "Logiciel",
+                        "subCategories": [
+                            "Antivirus",
+                            "Système d'Exploitation",
+                            "Suite Bureautique"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Accessoires Ordinateurs",
+                        "subCategories": [
+                            "Souris & Tapis",
+                            "Clavier",
+                            "Webcam",
+                            "Ecouteurs et micro casque",
+                            "Manette de jeux",
+                            "Hub USB",
+                            "Support Ecran",
+                            "Support & Refroidissement",
+                            "Onduleurs & Protection",
+                            "Sac Laptop",
+                            "Cables et Adptateurs",
+                            "Acsessoires Divers"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Composants",
+                        "subCategories": [
+                            "Processeur",
+                            "Memoire RAM",
+                            "Carte Graphique",
+                            "Carte Mère",
+                            "Carte réseau",
+                            "Boitier",
+                            "Bloc Alimentation",
+                            "Ventilateur",
+                            "Graveurs & Lecteurs",
+                            "Chargeur Laptop",
+                            "Batterie Laptop",
+                            "Afficheur Laptop",
+                            "Clavier Laptop"
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "Smartphones",
+            "columns": []
+        },
+        {
+            "name": "Électroménager",
+            "columns": []
+        },
+        {
+            "name": "Image - son",
+            "columns": []
+        },
+        {
+            "name": "Beauté",
+            "columns": []
+        },
+        {
+            "name": "Enfants",
+            "columns": []
+        },
+        {
+            "name": "Bricolage",
+            "columns": []
+        },
+        {
+            "name": "Jardinage",
+            "columns": []
+        }
+    ]
+}

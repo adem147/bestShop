@@ -5,8 +5,8 @@ import ProductSellers from '../components/ProductSellers.jsx';
 const ProductPage = () => {
     return (
         <>
-        <Product/>
-        <ProductSellers/>
+            <Product/>
+            <ProductSellers/>
         </>
     );
 };

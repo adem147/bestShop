@@ -5,16 +5,14 @@ import SellerLogo from "../assets/LOGO-MYTEK-176PX-INVERSE.jpg";
 const Item = () => {
   return (
     <>
-      <div class="Sellers">
-      <div className="SellerInfo">
-        <img src={SellerLogo} alt="Seller Logo" class="SellerLogo" />
-        <hr className="Divider" />
-        <h4 className="Price">150 DT</h4>
-      </div>
-    
-      <div class="Button">
-       <h4>Voir l'offre</h4>
-      </div>
+      <div class="seller">
+        <div className="sellerInfo PublicSans">
+          <img src={SellerLogo} alt="seller Logo" class="sellerLogo" />
+          <div className="divider" />
+          <h4 className="price">150 DT</h4>
+          <h4 className="stock">EN STOCK</h4>
+        </div>
+          <button className="button PublicSans">Voir l'offre</button>
       </div>
     </>
   );
@@ -23,8 +21,8 @@ const Item = () => {
 const ProductSellers = () => {
   return (
     <>
-    <div class="SellersFrame">
-      <div class="SellersContainer">
+    <div class="sellersFrame">
+      <div class="sellersContainer">
           <Item />
           <Item />
           <Item />

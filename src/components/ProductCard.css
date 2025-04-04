@@ -1,0 +1,84 @@
+.card{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
+.card p{
+    margin: 0;
+}
+.card-image-background{
+    position: relative;
+    width: 240px;
+    height: 290px;
+    background: #F3F3F3;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-image{
+    width: 200px;
+    height: 150px;
+    object-fit:scale-down;
+    transition: 0.1s;
+}
+.card-image-background:hover .card-image{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+.card-favorite-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.card-favorite-button .heart-icon{
+    width: 18px;
+    height: 18px;
+}
+.card-favorite-button:hover .heart-icon{
+    fill: rgb(255, 64, 64);
+    stroke: rgb(255, 64, 64);
+}
+.card-title{
+    margin-top: 0.75rem !important;
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: black;
+    text-align: left;
+}
+.card-price-container{
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    margin-top: 0.75rem;
+}
+.card-price{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: black;
+    text-align: left;
+}
+
+.card-old-price{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #818181;
+    text-align: left;
+    text-decoration-line: line-through;
+}

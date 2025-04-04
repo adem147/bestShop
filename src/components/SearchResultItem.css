@@ -1,0 +1,16 @@
+.search-item-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+}
+.search-item-title{
+    font-size: 16px;
+    color: black;
+    text-align: start;
+}
+.search-item-price{
+    font-size: 18px;
+    color: black;
+    text-align: start;
+}
