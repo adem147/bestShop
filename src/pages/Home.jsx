@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
 import { Carousel } from '../components/Carousel';
 import { ProductCard } from '../components/ProductCard';
-import { ReactComponent as Arrow } from '../assets/arrow.svg';
-import slides from "../assets/CarouselSlides.json";
-import promos from "../assets/Promos.json";
+import { ReactComponent as Arrow } from '../assets/svg/arrow.svg';
+import slides from "../assets/json/CarouselSlides.json";
+import promos from "../assets/json/Promos.json";
 import './Home.css';
 
 const Home = () => {

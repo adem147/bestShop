@@ -99,27 +99,27 @@
         },
         {
             "name": "Électroménager",
-            "subCategories": []
+            "columns": []
         },
         {
             "name": "Image - son",
-            "subCategories": []
+            "columns": []
         },
         {
             "name": "Beauté",
-            "subCategories": []
+            "columns": []
         },
         {
             "name": "Enfants",
-            "subCategories": []
+            "columns": []
         },
         {
             "name": "Bricolage",
-            "subCategories": []
+            "columns": []
         },
         {
             "name": "Jardinage",
-            "subCategories": []
+            "columns": []
         }
     ]
 }

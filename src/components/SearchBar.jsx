@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './SearchBar.css';
-import searchIcon from '../assets/search-icon.svg';
+import {ReactComponent as SearchIcon} from '../assets/svg/search-icon.svg';
 
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState('');
@@ -15,6 +15,7 @@ const SearchBar = ({ onSearch }) => {
 
   return (
     <div className = "search-bar">
+      <SearchIcon fill='#FFFFFF' className="search-bar-button" onClick={handleSearch}/>
       <input
         className = "search-bar-input"
         type="text"
@@ -22,9 +23,6 @@ const SearchBar = ({ onSearch }) => {
         onChange={handleInputChange}
         placeholder="Recherche..."
       />
-      <button className="search-bar-button" onClick={handleSearch}>
-        <img src={searchIcon} alt="Search" />
-      </button>
     </div>
   );
 };

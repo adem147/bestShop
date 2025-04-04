@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./Carousel.css"
-import Arrow from '../assets/arrow.svg';
+import Arrow from '../assets/svg/arrow.svg';
 
 export const Carousel = ({ data }) => {
     const [activeIndex, setActiveIndex] = useState(0);

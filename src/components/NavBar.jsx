@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Categories from '../assets/Categories.json';
+import Categories from '../assets/json/Categories.json';
 import './NavBar.css';
 
 const NavBar = () => {
@@ -34,9 +34,10 @@ const NavBar = () => {
                 ))}
             </ul>
             <div className={`sub-categories-container ${activeCategory !== null ? 'visible' : ''}`}>
-                {activeCategory !== null && Categories.Categories[activeCategory].columns.map((column, rowIndex) => (
-                    <div key={rowIndex} className="column">
-                        {column[rowIndex].map((subCategory, subIndex) => (
+                {activeCategory !== null && Categories.Categories[activeCategory].columns.map((column, columnIndex) => (
+                    /*console.log(rowIndex)*/
+                    <div key={columnIndex} className="column">
+                        {column.map((subCategory, subIndex) => (
                             <div key={subIndex} className="sub-category-container">
                                 <p className='subCategoryName'>{subCategory.name}</p>
                                 {subCategory.subCategories.map((subSubCategory, subSubIndex) => (

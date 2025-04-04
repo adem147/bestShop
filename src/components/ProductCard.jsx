@@ -1,5 +1,5 @@
 import React from 'react'
-import {ReactComponent as Heart} from '../assets/heart.svg'
+import {ReactComponent as Heart} from '../assets/svg/heart.svg'
 import './ProductCard.css'
 
 const images = require.context('../assets/', false, /\.(png|jpe?g|svg)$/);
