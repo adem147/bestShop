@@ -7,6 +7,10 @@ import Home from './pages/Home';
 import ProductPage from './pages/ProductPage';
 import Search from "./pages/Search";
 
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/500.css';
+import '@fontsource/poppins/600.css';
+
 import './App.css';
 
 function App() {

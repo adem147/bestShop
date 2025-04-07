@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   viewBox="0 0 24 24"
+   stroke="#888888"
+   version="1.1"
+   id="svg4"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4" />
+  <g
+     style="fill:none"
+     id="g4"
+     transform="matrix(0.87858012,0,0,0.87858012,1.302652,1.2465128)">
+    <polygon
+       points="2,7 2,17 12,22 22,17 22,7 12,2 "
+       stroke-linejoin="round"
+       stroke-width="1.5"
+       id="polygon1" />
+    <line
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="1.5"
+       x1="2"
+       x2="12"
+       y1="7"
+       y2="12"
+       id="line1" />
+    <line
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="1.5"
+       x1="12"
+       x2="12"
+       y1="22"
+       y2="12"
+       id="line2" />
+    <line
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="1.5"
+       x1="22"
+       x2="12"
+       y1="7"
+       y2="12"
+       id="line3" />
+    <line
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="1.5"
+       x1="17"
+       x2="7"
+       y1="4.5"
+       y2="9.5"
+       id="line4" />
+  </g>
+</svg>

@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-.form-container{
+.form-container{    
     font-family: 'Poppins';
     width: 35%;
     background-color: white;
@@ -37,7 +37,7 @@
 .form-container a{
     color:#04a5f0;
 }
-rgb(155, 155, 155)rgb(28, 153, 255)
+
 .signup-form-divider{
     margin: 25px auto 15px auto;
     height: 1px;

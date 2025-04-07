@@ -12,7 +12,7 @@ const TopBar = () => {
     return (
         <div className="topBar karantina">
             <div className="logoPlaceholder" onClick={() => navigate("/")}>BESTSHOP<div className='vl-logo'/></div>
-            <SearchBar />
+            <SearchBar/>
             <div className="rightSection">
             <div className="icon"><NotifIcon/></div>
                 <div className="icon"><WishIcon/></div>
