@@ -9,7 +9,7 @@ const Item = ({seller}) => {
         <div className="sellerInfo PublicSans">
           <img src={SellerLogo} alt="seller Logo" className="sellerLogo" />
           <div className="divider" />
-          <h4 className="price">{seller.PRICE}</h4>
+          <h4 className="price">{seller.PRICE}DT</h4>
           <h4 className="stock">{seller.STOCK === "0"? "EN STOCK": seller.STOCK === "1"? "EN ARRIVAGE": "HORS STOCK"}</h4>
         </div>
           <a className="button PublicSans" href={seller.PRICE_URL} target="_blank">
@@ -32,7 +32,7 @@ const ProductSellers = ({results}) => {
               <>
                   {results.sellers.map((seller, index) => (
                       <>
-                          <Item key={index} seller={seller} />
+                          <Item key={index} seller={seller}/>
                       </>
                   ))}
               </>

@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import Product from '../components/Product.jsx';
 import ProductSellers from '../components/ProductSellers.jsx';
+import ProductExtras from '../components/ProductExtra.jsx';
 
 const useQuery = () => {
     return new URLSearchParams(useLocation().search);
@@ -56,6 +56,7 @@ const ProductPage = () => {
             </div>
             <Product results={results}/>
             <ProductSellers results={results}/>
+            <ProductExtras results={results}/>
         </>
     );
 };

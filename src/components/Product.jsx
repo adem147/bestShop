@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import RatingStar from "./RatingStar";
 import "./Product.css";
 
-
 const FilledCircle = ({ size, color}) => {
   return (
     <div

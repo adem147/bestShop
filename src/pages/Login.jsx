@@ -1,4 +1,6 @@
 import React,  { useState } from 'react';
+import { useContext } from 'react';
+import { AuthContext } from '../contexts/AuthContext';
 import axios from 'axios';
 import EyeShow from '../assets/svg/eye-show.svg';
 import EyeHide from '../assets/svg/eye-hide.svg';
@@ -7,13 +9,13 @@ import './SignUp.css';
 
 const SignUp = () => {
     const [showPassword, setShowPassword] = useState(false);
-
+    
+    const { setUser } = useContext(AuthContext);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
 
     const handleLogin = async (e) => {
-        console.log("Login function called");
         e.preventDefault();
         
         // Prepare the form data to be sent to the server
@@ -22,17 +24,20 @@ const SignUp = () => {
         loginData.append('password', password);
 
         try {
-            // Send POST request to the PHP script
-            const response = await axios.post('http://localhost/login.php', loginData);
+            const response = await axios.post('http://localhost/login.php', loginData, { withCredentials: true });
             
-            // Check the response
-            if (response.data.error) {
-                console.log(response.data.error);
-                setMessage(response.data.error);
-            } else if (response.data.message) {
-                console.log(response.data.user);
+            console.log(response.data);
+            if (response.data.found === false) {
+                console.log(response.data.found);
                 setMessage(response.data.message);
-            } else {
+            } else if (response.data.success) {
+                console.log(response.data.success);
+                setMessage('');
+                setUser(response.data.user);
+            } else if (response.data.success === false) {
+                console.log(response.data.success);
+                setMessage(response.data.message);
+            }  else {
                 console.log("Unexpected response:", response.data);
                 setMessage('Unexpected response from server.');
             }
@@ -41,7 +46,6 @@ const SignUp = () => {
             setMessage('An error occurred during login.');
         }
     };
-
     return (
         <>
             <div className='signup-container'>
