@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-
-
-.Product {
-    display: flex;
-    align-items:center; /* Align items vertically */
-    justify-content: space-between;/* Align items horisentally*/
-    width: 60%;
-    min-width: 800px;
-    margin: 10px;
-}
-
-.ProductDescription h1{
-    color: rgb(12, 12, 12);
-}
-
-.ProductDescription h4{
-    font-weight: 100;
-=======
 .Product {
     display: flex;
     justify-content: space-between;/* Align items horisentally*/
@@ -98,80 +79,12 @@
 .ProductDescription p {
     color: #686868;
     font-size: 16px;
->>>>>>> efb88e550240cdc57c8b1b786f39c6d519577ad6
 }
 
 .ProductImg {
     width:50%; 
     height: 100%; 
 }
-<<<<<<< HEAD
-.ProductGroupImg{
-    height: 50%;
-    width:80%; 
-  
-    
-}
-.ProductSelfImg{
-   
-    height: 50%;
-    width: 100%; 
-    
-}
-.ProductDescription {
-    width:50%;
-    height: 100%;
-    padding: 5%;
-    text-align: left;
-    font-size: 50%;
-    color: rgb(0, 0, 0);
-    
-}
-
-.ProductDescription h1{
-    font-weight:100;
-}
-
-
-
-.ProductDescription p {
-    color: rgb(102, 102, 102);
-    font-size: 80%;
-}
-
-.ProductRating {
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.ProductRating .StarContainer img{
-    width: 15%;
-    height: 15%;
-
-}
-.ProductRating h4{
-    font-weight: 100;
-    font-size: 90%;
-}
-
-.ProductRating .StarContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-   
-}
-.DachedLine{
-    border-top: 1px dashed #D0D0D0 ;
-}
-.ProductColor{
-    display:flex;
-    justify-content:space-between ;
-}
-.ProductColor span{
-=======
 
 .ProductGroupImg{
     width:80%;
@@ -199,18 +112,11 @@
     margin: 10px 0;
 }
 .product-option span{
->>>>>>> efb88e550240cdc57c8b1b786f39c6d519577ad6
     display:flex;
     align-items: center;
     gap: 10px;
 }
-<<<<<<< HEAD
-.circle{
-    box-shadow: 0px 0px 3px rgb(63, 63, 63);
-  
-=======
 
 .circle{
     box-shadow: 0px 0px 3px rgb(63, 63, 63);
->>>>>>> efb88e550240cdc57c8b1b786f39c6d519577ad6
 }
