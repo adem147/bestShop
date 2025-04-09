@@ -1,0 +1,142 @@
+.product-extras-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F9F9;
+    width: 100%;
+    align-items: center;
+}
+.rating-container{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    gap: 150px;
+}
+
+.rating-general-info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rating-general-info-title{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.rating-general-info{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.global-rating{
+    display: flex;
+    flex-direction: column;
+}
+
+.global-rating-value{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+
+.global-rating-nb{
+    font-weight: 600;
+    font-size: 16px;
+    color: #BEBEBE;
+}
+
+.rating-distribution{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rating-distribution-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 14px;
+}
+
+.rating-distribution-item-stars{
+    width: 125px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 2px;
+}
+
+.rating-distribution-item-bar{
+    height: 8px;
+    width: 120px;
+}
+
+.rating-distribution-item-bar div{
+    height: 8px;
+    background-color: #64BCCC;
+    border-radius: 4px;
+}
+
+.rating-distribution-item-count{
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #A7A7A7;
+}
+
+.reviews-container{
+    width: 745px;
+}
+
+.review-title{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: start;
+    width: 100%;
+    color: #5E5E5E;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px 20px;
+}
+.review-writer{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: start;
+}
+.review-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.review-stars{
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 2px;
+}
+.review-date{
+    font-size: 14px;
+    font-weight: 400;
+    color: #9D9D9D;
+}
+.review-body{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    color: #9D9D9D;
+    text-wrap: wrap;
+    margin: 0px 0 0 0;
+}

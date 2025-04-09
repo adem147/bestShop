@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { AuthProvider } from './contexts/AuthContext';
 import NavBar from './components/NavBar';
 import TopBar from './components/TopBar';
 import Login from './pages/Login';
@@ -10,6 +11,11 @@ import Footer from './components/Footer';
 import ProductPage from './pages/ProductPage';
 import Search from "./pages/Search";
 
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/500.css';
+import '@fontsource/poppins/600.css';
+import '@fontsource/poppins/700.css';
+
 import './App.css';
 
 function App() {
@@ -18,6 +24,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
+<<<<<<< HEAD
           <TopBar />
           <NavBar />
           <div className='content'>
@@ -30,6 +37,21 @@ function App() {
             </Routes>
           </div>
           <Footer/>
+=======
+          <AuthProvider>
+            <TopBar />
+            <NavBar />
+            <div className='content'>
+              <Routes>
+                <Route path="/" element={<Home/>} />
+                <Route path="/product" element={<ProductPage/>} />
+                <Route path="/login" element={<Login/>} />
+                <Route path="/signup" element={<SignUp/>} />
+                <Route path="/search" element={<Search/>} />
+              </Routes>
+            </div>
+        </AuthProvider>
+>>>>>>> 8417aac82f441659a2f726d721df79f17f04b01f
         </header>
        
       </div>

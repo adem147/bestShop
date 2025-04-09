@@ -1,16 +1,128 @@
 .search-item-container{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     color: black;
+    border-radius: 12px;
+    gap: 20px;
+    padding: 20px; ;
+    cursor: pointer;
+}
+.search-item-container:hover{
+    background-color: #fafafa;
+}
+.search-item-image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 10px;
+    background-color: #F3F3F3;
+}
+.search-item-image{
+    max-height: 80%;
+    max-width: 80%;
+}
+.search-item-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: auto;
 }
 .search-item-title{
     font-size: 16px;
     color: black;
     text-align: start;
+    font-weight: 600;
+    margin: 8px 0 0 0;
+}
+.search-item-description{
+    font-size: 14px;
+    color: #999999  ;
+    text-align: start;
+    font-weight: 400;
+    margin: 5px 0 0 0;
+}
+.search-item-details2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+    padding-top: 10px;
 }
 .search-item-price{
     font-size: 18px;
     color: black;
     text-align: start;
+    font-weight: 600;
+    margin: 0;
+}
+
+.search-item-availability{
+    font-size: 16px;
+    color: #22C55E;
+    text-align: start;
+    font-weight: 600;
+    margin: 0;
+}
+.search-item-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.add-to-cart-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    padding-left: 15px;
+    background-color: #31D95E;
+    width: 180px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+.add-to-cart-btn:hover{
+    background-color: #2dee60;
+}
+.add-to-cart-btn span{
+    font-size: 28px;
+}
+
+.wishlist-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #BFBFBF;
+    width: 115px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.wishlist-btn:hover{
+    background-color: #cacaca;
+}
+.wishlist-btn .wishlist-heart{
+    width: 18px;
+    height: 18px;
 }

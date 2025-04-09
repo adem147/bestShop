@@ -8,7 +8,7 @@
     background-color: #000000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    z-index: 1000;
+    z-index: 900;
 }
 
 .logoPlaceholder {
@@ -35,10 +35,27 @@
 }
 
 .icon {
+    position: relative;
     height: 26px;
     width: 26px;
     font-size: 20px;
     cursor: pointer;
+}
+
+.topbar-counter{
+    position: absolute;
+    align-items: center;
+    top: -2px;
+    right: -10px;
+    width: 13px;
+    height: 13px;
+    background-color: #5E59FF;
+    border: 2px solid #000000;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 .userIcon {
@@ -46,4 +63,30 @@
     height: 30px;
     width: 30px;
     cursor: pointer;
+}
+
+.user-drop{
+    position: absolute;
+    right: 0;
+    top: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #000000;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.user-drop-item{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    border-radius: 8px;
+    padding: 8px 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.user-drop-item:hover{
+    background-color: rgb(44, 44, 44);
 }

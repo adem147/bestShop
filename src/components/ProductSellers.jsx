@@ -2,38 +2,41 @@ import React from "react";
 import "./ProductSellers.css";
 import SellerLogo from "../assets/LOGO-MYTEK-176PX-INVERSE.jpg";
 
-const Item = () => {
+const Item = ({seller}) => {
   return (
     <>
-      <div class="seller">
+      <div className="seller">
         <div className="sellerInfo PublicSans">
-          <img src={SellerLogo} alt="seller Logo" class="sellerLogo" />
+          <img src={SellerLogo} alt="seller Logo" className="sellerLogo" />
           <div className="divider" />
-          <h4 className="price">150 DT</h4>
-          <h4 className="stock">EN STOCK</h4>
+          <h4 className="price">{seller.PRICE}DT</h4>
+          <h4 className="stock">{seller.STOCK === "0"? "EN STOCK": seller.STOCK === "1"? "EN ARRIVAGE": "HORS STOCK"}</h4>
         </div>
-          <button className="button PublicSans">Voir l'offre</button>
+          <a className="button PublicSans" href={seller.PRICE_URL} target="_blank">
+            <button >Voir l'offre</button>
+          </a>
       </div>
     </>
   );
 };
 
-const ProductSellers = () => {
+const ProductSellers = ({results}) => {
+  
   return (
     <>
-    <div class="sellersFrame">
-      <div class="sellersContainer">
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
-          <Item />
+      <div className="sellersFrame">
+        <div className="sellersContainer">
+          {results.sellers.length === 0? (
+              <div>No Shops Found.</div>
+          ):(
+              <>
+                  {results.sellers.map((seller, index) => (
+                      <>
+                          <Item key={index} seller={seller}/>
+                      </>
+                  ))}
+              </>
+          )}
         </div>
       </div>
     </>
