@@ -37,8 +37,6 @@
   outline: none;
   cursor: pointer;
 }
-<<<<<<< HEAD
-=======
 
 .search-results-dropdown{
   flex-direction: column;
@@ -96,4 +94,3 @@
 .search-dropdown-divider:last-child{
   display: none;
 }
->>>>>>> 8417aac82f441659a2f726d721df79f17f04b01f
