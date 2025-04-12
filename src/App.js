@@ -24,20 +24,6 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-<<<<<<< HEAD
-          <TopBar />
-          <NavBar />
-          <div className='content'>
-            <Routes>
-              <Route path="/" element={<Home/>} />
-              <Route path="/product" element={<ProductPage/>} />
-              <Route path="/login" element={<Login/>} />
-              <Route path="/signup" element={<SignUp/>} />
-              <Route path="/search" element={<Search/>} />
-            </Routes>
-          </div>
-          <Footer/>
-=======
           <AuthProvider>
             <TopBar />
             <NavBar />
@@ -51,7 +37,6 @@ function App() {
               </Routes>
             </div>
         </AuthProvider>
->>>>>>> 8417aac82f441659a2f726d721df79f17f04b01f
         </header>
        
       </div>
