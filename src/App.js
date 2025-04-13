@@ -7,6 +7,8 @@ import SignUp from './pages/SignUp';
 import Home from './pages/Home';
 import ProductPage from './pages/ProductPage';
 import Search from "./pages/Search";
+import Wishlist from './pages/Wishlist';
+import Cart from './pages/Cart';
 
 import '@fontsource/poppins/400.css';
 import '@fontsource/poppins/500.css';
@@ -22,14 +24,16 @@ function App() {
         <header className="App-header">
           <AuthProvider>
             <TopBar />
-            <NavBar />
             <div className='content'>
+            <NavBar />
               <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/product" element={<ProductPage/>} />
                 <Route path="/login" element={<Login/>} />
                 <Route path="/signup" element={<SignUp/>} />
                 <Route path="/search" element={<Search/>} />
+                <Route path="/wishlist" element={<Wishlist/>} />
+                <Route path="/cart" element={<Cart/>} />
               </Routes>
             </div>
         </AuthProvider>

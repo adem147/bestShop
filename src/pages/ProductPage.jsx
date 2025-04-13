@@ -17,25 +17,25 @@ const ProductPage = () => {
 
     useEffect(() => {
         const fetchResults = async () => {
-        try {
-            const response = await axios.get('http://localhost/product2.php', { params: { query } });
+            try {
+                const response = await axios.get('http://localhost/product2.php', { params: { query } });
 
-            //console.log(response);
-            if (response.data.error) {
-                console.log(response.data.error);
-                setResults([]);
-            } else if (response.data) {
-                console.log(response.data);
-                setResults(response.data);
-            } else {
-                console.log("Unexpected response:", response.data);
-                setResults([]);
+                //console.log(response);
+                if (response.data.error) {
+                    console.log(response.data.error);
+                    setResults([]);
+                } else if (response.data) {
+                    console.log(response.data);
+                    setResults(response.data);
+                } else {
+                    console.log("Unexpected response:", response.data);
+                    setResults([]);
+                }
+            } catch (error) {
+                console.error("Search error:", error);
+            } finally {
+                setLoading(false);
             }
-        } catch (error) {
-            console.error("Search error:", error);
-        } finally {
-            setLoading(false);
-        }
         };
         if (query) {
             fetchResults();
@@ -54,7 +54,7 @@ const ProductPage = () => {
                     </span>
                 ))}
             </div>
-            <Product results={results}/>
+            <Product productInfo={results}/>
             <ProductSellers results={results}/>
             <ProductExtras results={results}/>
         </>

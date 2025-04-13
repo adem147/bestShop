@@ -12,7 +12,7 @@ import './TopBar.css';
 
 const TopBar = () => {
     const [showUserDrop, setShowUserDrop] = useState(false);
-    const { user, setUser } = useContext(AuthContext);
+    const { user, setUser, setWishlist, setCart, wishlistCount, setWishlistCount, cartCount, setCartCount } = useContext(AuthContext);
     const navigate = useNavigate();
     const dropRef = useRef(null);
 
@@ -20,11 +20,15 @@ const TopBar = () => {
         try {
             await axios.post('http://localhost/logout.php', {}, { withCredentials: true });
             setUser(null);
-            navigate("/login");
+            setWishlist([]);
+            setWishlistCount(0);
+            setCart([]);
+            setCartCount(0);
+            navigate("/");
         } catch (error) {
             console.error("Logout error:", error);
         }
-    };  
+    };      
 
     useEffect(() => {
         const handleClickOutside = (e) => {
@@ -45,26 +49,21 @@ const TopBar = () => {
             <SearchBar/>
             <div className="rightSection" ref={dropRef}>
             <div className="icon"><NotifIcon/></div>
-                <div className="icon">
+                <div className="icon" onClick={() => navigate("/wishlist")}>
                     <WishIcon/>
-                    {user ? <span className='topbar-counter'>{user.wishlist.length}</span> : null}
+                    {wishlistCount? <span className='topbar-counter'>{wishlistCount}</span> : null}
                 </div>
                 
-                <div className="icon">
+                <div className="icon" onClick={() => navigate("/cart")}>
                     <CartIcon/>
-                    {user ? <span className='topbar-counter'>{user.cart.length}</span> : null}
+                    {cartCount? <span className='topbar-counter'>{cartCount}</span> : null}
                 </div>
                 <div className="userIcon" onClick={() => setShowUserDrop(!showUserDrop)}><UserIcon/></div>
                 <div className="user-drop" style={{ display: showUserDrop ? "block" : "none" }}>
-                    <div className="user-drop-item" onClick={() => navigate("/login")}>
-                        {user ? (
-                            `${user.first}`
-                        ) : (
-                            "Login"
-                        )}
-                    </div>
+                    {!user ? <div className="user-drop-item" onClick={() => navigate("/login")}> Login </div>:null}
+                    {user ? <div className="user-drop-item" onClick={() => navigate("/user")}> {user.first} </div>:null}
                     <div className="user-drop-item" onClick={() => navigate("/settings")}>Parametres</div>
-                    <div className="user-drop-item" onClick={handleLogout}>Déconnexion</div>
+                    {user?<div className="user-drop-item" onClick={handleLogout}>Déconnexion</div>:null}
                 </div>
             </div>
         </div>

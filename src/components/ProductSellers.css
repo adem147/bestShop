@@ -36,7 +36,9 @@
 
 .sellerLogo{
     margin-top: 15px;
-    width: 70%;   
+    height: 40px;
+    width: 70%;
+    object-fit: contain;
 }
 
 .seller .divider{
@@ -74,7 +76,7 @@
     width: 100%;
     height: 100%;
     color: white;
-    background-color: #FF9D00;
+    background-color: #31D95E;
     font-weight: 600;
     border: none;
     border-radius: 8px;
@@ -83,7 +85,7 @@
 }
 
 .seller button:hover{
-    background-color: #ffac27;
+    background-color: rgb(34, 192, 76);
 }
 
 

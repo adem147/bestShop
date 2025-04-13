@@ -73,6 +73,7 @@
 
 /*text*/
 .ProductDescription h1{
+    font-size: 24px;
     font-weight:normal;
     color: rgb(12, 12, 12);
 }
@@ -85,7 +86,63 @@
 .product-availability .stock{
     font-size: 16px;
     font-weight: bold;
-    color: #22C55E;
+}
+.product-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 38px;
+    font-size: 16px;
+    padding: 8px 0;
+}
+
+.product-buttons .add-to-cart-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    padding-left: 15px;
+    background-color: #22C55E;
+    width: 180px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.product-buttons .add-to-cart-btn:hover{
+    background-color: #28d166;
+}
+.product-buttons .add-to-cart-btn span{
+    font-size: 28px;
+}
+
+.product-buttons .wishlist-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #BFBFBF;
+    width: 115px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.product-buttons .wishlist-btn:hover{
+    background-color: #c7c7c7;
+}
+.product-buttons .wishlist-btn .wishlist-heart{
+    width: 18px;
+    height: 18px;
 }
 
 .ProductDescription h3{
@@ -142,7 +199,7 @@
 .product-sub-img-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:start;
     align-items: center;
     width: 500px;
     height: 90px;

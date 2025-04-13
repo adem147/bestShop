@@ -1,0 +1,109 @@
+.wishlist-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.wishlist-container .breadcrumbs{
+    margin: 0 0 30px 0;
+}
+.wishlist-container h2{
+    color: black;
+    margin: 10px 0 30px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.wishlist-heart{
+    width: 80px;
+    height: 80px;
+}
+
+.wishlist {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 0.25rem;
+    padding: 0 1.25rem;
+}
+.wishlist-empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: rgb(87, 87, 87);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.wishlist-header, .wishlist-row {
+    padding: 12px 0 12px 0.5rem;
+    display:flex;
+    width: fit-content;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 0.25rem;
+}
+
+.wishlist-header{
+    border-bottom: 1px solid #d4d4d4;
+    color: black;
+}
+
+.wishlist-row:not(:last-child) {
+    border-bottom: 1px dashed #ececec ;
+}
+
+.wishlist-header-cell, .wishlist-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 14px;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.wishlist-header-cell{
+    height: 32px;
+    font-weight: 600;
+}
+
+.wishlist-cell {
+    height: 60px;
+}
+
+.wishlist-header-cell span {
+    justify-content: center;
+}
+
+.wishlist-prd-img{
+    height: 50px;
+    width: 50px;
+    padding-right: 20px;
+    object-fit: cover;
+}
+
+.wishlist-add-button{
+    padding: 8px 20px;
+    background-color: #48BB78;
+    border-radius: 18.5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.wishlist-status{
+    padding: 6px 14px;
+    border-radius: 18.5px;
+    color: white;
+}
+

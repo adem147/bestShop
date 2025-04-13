@@ -80,7 +80,7 @@
     font-size: 16px;
 }
 
-.add-to-cart-btn{
+.search-item-btns .add-to-cart-btn{
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -96,14 +96,14 @@
     font-family: "Poppins", sans-serif;
     cursor: pointer;
 }
-.add-to-cart-btn:hover{
+.search-item-btns .add-to-cart-btn:hover{
     background-color: #2dee60;
 }
-.add-to-cart-btn span{
+.search-item-btns .add-to-cart-btn span{
     font-size: 28px;
 }
 
-.wishlist-btn{
+.search-item-btns .wishlist-btn{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -119,10 +119,10 @@
     cursor: pointer;
 }
 
-.wishlist-btn:hover{
+.search-item-btns .wishlist-btn:hover{
     background-color: #cacaca;
 }
-.wishlist-btn .wishlist-heart{
+.search-item-btns .wishlist-btn .wishlist-heart{
     width: 18px;
     height: 18px;
 }

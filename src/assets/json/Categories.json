@@ -94,7 +94,7 @@
             ]
         },
         {
-            "name": "Smartphones",
+            "name": "Téléphonie",
             "columns": []
         },
         {
@@ -106,6 +106,14 @@
             "columns": []
         },
         {
+            "name": "Impression",
+            "columns": []
+        },
+        {
+            "name": "Mode",
+            "columns": []
+        },
+        {
             "name": "Beauté",
             "columns": []
         },
@@ -114,11 +122,47 @@
             "columns": []
         },
         {
+            "name": "Meubles & Décor",
+            "columns": []
+        },
+        {
+            "name": "Cuisine",
+            "columns": []
+        },
+        {
+            "name": "Sport",
+            "columns": []
+        },
+        {
+            "name": "Santé",
+            "columns": []
+        },
+        {
+            "name": "Jeux & Loisirs",
+            "columns": []
+        },
+        {
+            "name": "Jeux vidéo",
+            "columns": []
+        },
+        {
+            "name": "Livres",
+            "columns": []
+        },
+        {
             "name": "Bricolage",
             "columns": []
         },
         {
+            "name": "Éléctronique",
+            "columns": []
+        },
+        {
             "name": "Jardinage",
+            "columns": []
+        },
+        {
+            "name": "Animalerie",
             "columns": []
         }
     ]

@@ -6,8 +6,8 @@ import {ReactComponent as SearchIcon} from '../assets/svg/search-icon.svg';
 
 const SearchBar = () => {
   const [query, setQuery] = useState('');
-const [results, setResults] = useState([]);
-const [loading, setLoading] = useState(false);
+  const [results, setResults] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
 

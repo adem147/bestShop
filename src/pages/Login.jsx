@@ -1,5 +1,6 @@
 import React,  { useState } from 'react';
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../contexts/AuthContext';
 import axios from 'axios';
 import EyeShow from '../assets/svg/eye-show.svg';
@@ -8,6 +9,7 @@ import EyeHide from '../assets/svg/eye-hide.svg';
 import './SignUp.css';
 
 const SignUp = () => {
+    const navigate = useNavigate();
     const [showPassword, setShowPassword] = useState(false);
     
     const { setUser } = useContext(AuthContext);
@@ -34,6 +36,7 @@ const SignUp = () => {
                 console.log(response.data.success);
                 setMessage('');
                 setUser(response.data.user);
+                navigate("/");
             } else if (response.data.success === false) {
                 console.log(response.data.success);
                 setMessage(response.data.message);

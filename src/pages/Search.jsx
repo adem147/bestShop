@@ -49,6 +49,8 @@ const Search = () => {
     return (
         <>
             <div className='search-container'>
+
+                {/*filers*/}
                 <div className='filter-container'>
                     <h2>Filtrer</h2>
                     <div className='filter-divider'></div>
@@ -59,6 +61,8 @@ const Search = () => {
                         </label>
                     </div>
                 </div>
+
+                {/*results*/}
                 <div className='search-result-container'>
                     <div className='search-top-bar'>
                         <h2>Resultat de recherche</h2>
