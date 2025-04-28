@@ -154,3 +154,4 @@ This enables dynamic filtering (e.g., “show all 8GB RAM laptops”) and a bett
 
 **BestShop Team**  
 💬 Contact: [mankai.adam@gmail.com]
+             [ademriahi94@gmail.com]
